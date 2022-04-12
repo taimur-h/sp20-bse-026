@@ -2,6 +2,8 @@ package com.example.sp20_bse_026;
 
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
@@ -68,7 +70,8 @@ public class ActionFragment extends Fragment {
         view.findViewById(R.id.addBtn).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                getActivity().getFragmentManager().beginTransaction().replace(R.id.rightFrag, new AddRecordFragment()).commit();
+
+                //getActivity().getFragmentManager().beginTransaction().replace(R.id.rightFrag, new AddRecordFragment() ).commit();
             }
         });
 
@@ -76,10 +79,17 @@ public class ActionFragment extends Fragment {
         view.findViewById(R.id.searchBtn).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                getActivity().getFragmentManager().beginTransaction().replace(R.id.rightFrag, new SearchFragment()).commit();
+               // getActivity().getFragmentManager().beginTransaction().replace(R.id.rightFrag, ).commit();
             }
         });
         return view;
+    }
+
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+
+
     }
 }
 

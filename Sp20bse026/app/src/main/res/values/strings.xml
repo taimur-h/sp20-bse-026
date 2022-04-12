@@ -5,4 +5,5 @@
     <string name="searchBtn">Search</string>
     <string name="msg">please select the appropriate action</string>
     <string name="saveBtn">save Button</string>
+    <string name="searchRecordPage"> search record page</string>
 </resources>

@@ -17,9 +17,17 @@ public class MainActivity extends AppCompatActivity {
         int orientation = getResources().getConfiguration().orientation;
 
         if(orientation== Configuration.ORIENTATION_LANDSCAPE){
+            //FragmentManager fragmentManager = getSupportFragmentManager();
+            //actionFragment = (ActionFragment) fragmentManager.findFragmentById(R.id.actionFrag);
+           // msgfragment = (msgFragment) fragmentManager.findFragmentById(R.id.msgfragment);
+            getSupportFragmentManager().beginTransaction().replace(R.id.leftFrag, new ActionFragment()).commit();
+
             FragmentManager fragmentManager = getSupportFragmentManager();
-            actionFragment = (ActionFragment) fragmentManager.findFragmentById(R.id.leftFrag);
-            msgfragment = (msgFragment) fragmentManager.findFragmentById(R.id.rightFrag);
+            fragmentManager.beginTransaction()
+                    .replace(R.id.rightFrag, msgFragment.class,null)
+                    .setReorderingAllowed(true)
+                    .addToBackStack("name") // name can be null
+                    .commit();
         }
     }
 
