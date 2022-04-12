@@ -70,8 +70,7 @@ public class ActionFragment extends Fragment {
         view.findViewById(R.id.addBtn).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                //getActivity().getFragmentManager().beginTransaction().replace(R.id.rightFrag, new AddRecordFragment() ).commit();
+                getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.rightFrag, new AddRecordFragment()).commit();
             }
         });
 
@@ -79,18 +78,12 @@ public class ActionFragment extends Fragment {
         view.findViewById(R.id.searchBtn).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-               // getActivity().getFragmentManager().beginTransaction().replace(R.id.rightFrag, ).commit();
+               getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.rightFrag, new SearchFragment()).commit();
             }
         });
         return view;
     }
 
-    @Override
-    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
-        super.onViewCreated(view, savedInstanceState);
-
-
-    }
 }
 
 

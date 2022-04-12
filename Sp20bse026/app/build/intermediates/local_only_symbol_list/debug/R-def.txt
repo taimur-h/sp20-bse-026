@@ -24,9 +24,7 @@ id rightFrag
 id savebtn
 id searchBtn
 id searchFrag
-id textView
 id textView2
-id textView3
 layout activity_main
 layout fragment_action
 layout fragment_add_record

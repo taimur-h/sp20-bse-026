@@ -9,24 +9,10 @@
     <FrameLayout
         android:id="@+id/leftFrag"
         android:layout_width="280dp"
-        android:layout_height="match_parent">
-
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="left" />
-    </FrameLayout>
+        android:layout_height="match_parent"/>
 
     <FrameLayout
         android:id="@+id/rightFrag"
         android:layout_width="456dp"
-        android:layout_height="match_parent">
-
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="right" />
-    </FrameLayout>
+        android:layout_height="match_parent"/>
 </LinearLayout>
