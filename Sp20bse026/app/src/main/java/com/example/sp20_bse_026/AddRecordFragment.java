@@ -59,6 +59,18 @@ public class AddRecordFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_add_record, container, false);
+       View view = inflater.inflate(R.layout.fragment_add_record, container, false);
+
+       view.findViewById(R.id.savebtn).setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View view) {
+               getActivity()
+                       .getSupportFragmentManager()
+                       .beginTransaction()
+                       .replace(R.id.rightFrag, msgFragment.class, null)
+                       .commit();
+           }
+       });
+       return view;
     }
 }

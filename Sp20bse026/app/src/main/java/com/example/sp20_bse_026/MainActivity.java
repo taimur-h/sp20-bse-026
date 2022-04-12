@@ -2,7 +2,6 @@ package com.example.sp20_bse_026;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.res.Configuration;
-import androidx.fragment.app.FragmentManager;
 import android.os.Bundle;
 
 public class MainActivity extends AppCompatActivity {

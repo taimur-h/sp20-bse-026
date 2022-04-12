@@ -2586,7 +2586,6 @@ id activity_chooser_view_content
 id add
 id addBtn
 id addRecordFrag
-id address
 id age
 id alertTitle
 id aligned
@@ -2853,7 +2852,6 @@ id path
 id pathRelative
 id peekHeight
 id percent
-id personName
 id pin
 id position
 id postLayout

@@ -12,14 +12,12 @@ drawable ic_launcher_foreground
 id actionFrag
 id addBtn
 id addRecordFrag
-id address
 id age
 id email
 id leftFrag
 id msg
 id msgfragment
 id password
-id personName
 id rightFrag
 id savebtn
 id searchBtn

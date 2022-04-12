@@ -11,11 +11,9 @@
         android:id="@+id/addBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="145dp"
-        android:layout_marginTop="261dp"
-        android:layout_marginEnd="178dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="164dp"
         android:text="@string/addBtn"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -23,11 +21,9 @@
         android:id="@+id/searchBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="145dp"
-        android:layout_marginTop="71dp"
-        android:layout_marginEnd="173dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="72dp"
         android:text="@string/searchBtn"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
